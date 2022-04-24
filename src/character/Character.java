@@ -36,7 +36,7 @@ public class Character implements Attackable {
 	public void attack(Attackable other) {
 		float scale = Math.min(skills.getPrecision() / 100, 1);
 		Random r = new Random();
-		int d20 = r.nextInt(1, 21);
+		int d20 = 1 + r.nextInt(20);
 		int damage = (int) ((float) skills.getStrength() * scale * (float) d20);
 		other.takeDamage(damage);
 	}

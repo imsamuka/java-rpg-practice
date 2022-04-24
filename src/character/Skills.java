@@ -34,13 +34,13 @@ public class Skills {
 
 		Random r = new Random();
 		int min = 4;
-		int max = 35;
+		int max = 20;
 
-		addPoints("armor", r.nextInt(min, max));
-		addPoints("precision", r.nextInt(min, max));
-		addPoints("regen", r.nextInt(min, max));
-		addPoints("speed", r.nextInt(min, max));
-		addPoints("strength", r.nextInt(min, max));
+		addPoints("armor", r.nextInt(max) + min);
+		addPoints("precision", r.nextInt(max) + min);
+		addPoints("regen", r.nextInt(max) + min);
+		addPoints("speed", r.nextInt(max) + min);
+		addPoints("strength", r.nextInt(max) + min);
 
 		spendRandomly(); // Ask again
 	}

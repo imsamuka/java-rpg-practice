@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		// List of created characters
-		ArrayList<Character> chars = new ArrayList<Character>(Race.values().length);
+		ArrayList<Character> chars = new ArrayList<>(Race.values().length);
 
 		// Create the player (selectable race and skills)
 		Character player = new Character(Race.selectRace());
